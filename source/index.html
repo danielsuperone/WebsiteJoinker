@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html data-nav-header>
+<head>
+    
+    <title>San Anton School - MySchool</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="msm-version" content="dev/1.9">
+    <meta http-equiv="X-UA-Compatible" content="IE=100">
+    <link href="css/css.css" rel="stylesheet">
+    <link href="css/icon.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+        
+                <link rel="stylesheet" type="text/css" href="css/jquery_ui_1820.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery_plugins.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="css/css_1.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bundle.css">
+                    <link rel="stylesheet" type="text/css" href="css/custom.css">
+        
+        <!--[if lte IE 8]>
+        <style type="text/css">
+            table div.rotated {
+                position: static;
+                top: 0px
+            }
+
+            .big_dashlet {
+                width: 99%;
+            }
+
+            @media print {
+                body, table, td {
+                    font-size: 22px;
+                }
+            }
+        </style>
+        <![endif]-->
+    
+        <style type="text/css">
+        .login-bg{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            overflow: hidden;
+        }
+        .login-bg .wrapper{
+            background-image: url(images/login.jpg);
+            background-size: cover;
+            background-position: center;
+            float: left;
+            filter: blur(6px);
+            margin: -12px;
+            height: calc(100% + 24px);
+            width: calc(100% + 24px);
+        }
+        .login-col{
+            max-width: 600px;
+            height: 100%;
+            margin: auto;
+        }
+        .login-col form{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0 40px;
+            display: block;
+            background: white;
+            padding: 40px;
+            border: 1px solid #efefef;
+        }
+        .login-col form .login-logo{
+            margin-bottom: 20px;
+            max-width: 100%;
+            max-height: 100px;
+        }
+        .login-col form input{
+            margin-bottom: 20px;
+        }
+        .login-col form button{
+            background-color: #3291e1;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px;
+            display: block;
+            width: 100% !important;
+            font-size: 16px !important;
+        }
+        .login-footer{
+            margin: 25px -25px -30px;
+            font-size: 10px;
+            line-height: 10px;
+        }
+        .problems{
+            text-align: center;
+            padding: 20px 0 0;
+        }
+        #retrieve_password_form{
+            display: none;
+        }
+        .message-wrapper span{
+            border: 1px solid #fa5e5b;
+            display: block;
+            padding: 20px;
+            background: #fa5e5b0f;
+            color: #fa5e5b;
+            font-weight: 600;
+        }
+    </style>
+                    <script type="text/javascript">
+            var wait_message;
+            var jquery_date_format = "dd/mm/yy";
+            var tablesorter_date_format = "ddmmyyyy";
+            var calendar_week_format = "ddd d/M";
+            var tinymce_lib_folder = "https://asset-cdn-19.msm.io/scripts/tinymce.4.3.8/";
+            var upload_max_filesize = "128M";
+            var calendar_hidden_day_list = [6,0];
+            var calendar_day_start = "08:30";
+            var calendar_day_end = "17:00";
+            var week_start_day = 1;
+            var default_language = "en_US";
+            var system_deploy_id = "60910f271ed28";
+
+            function getLocalCurrency() {
+                return "&euro;";
+            }
+        </script>
+        <script type="text/javascript">
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                            (i[r].q = i[r].q || []).push(arguments)
+                        }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-46826120-3', 'auto', {
+                'appVersion': 'dev/1.9'
+            });
+            ga('send', 'pageview');
+                    </script>
+
+        <script type="text/javascript" src="js/jquery_180.js"></script>
+        <script type="text/javascript" src="js/jquery_ui_1823.js"></script>
+        <script type="text/javascript" src="js/jquery_plugins.js"></script>
+        <script type="text/javascript" src="js/d3.min.js"></script>
+
+        <!--[if lte IE 8]>
+        <script language="javascript" type="text/javascript" src="https://asset-cdn-19.msm.io/scripts/excanvas_min.js?v=60910f271ed28"></script>
+        <![endif]-->
+        <script>
+            Object.defineProperty(window, 'MSM_ASSET_ROOT', {
+                value: 'https://asset-cdn.msm.io/dev/1.9/a89bf778c01a1ba41b11654bdfa8dcaeacaa51f0/',
+                writable: false
+            });
+            Object.defineProperty(window, 'MSM_INSTANCE_IN_DEBUG_MODE', {
+                value: false,
+                writable: false
+            });
+            Object.defineProperty(window, 'MSM_SESSION_JODA_DATE_FORMAT', {
+                value: 'dd/MM/uuuu',
+                writable: false
+            });
+            Object.defineProperty(window, 'MSM_SESSION_MOMENT_DATE_FORMAT', {
+                value: 'DD/MM/YYYY',
+                writable: false
+            });
+        </script>
+    
+
+    <script type="text/javascript" src="js/library.js"></script>
+    <script type="text/javascript" src="js/jquery.tinymce.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            setFocus();
+            $('#retrieve-password').click(function(e) {
+                e.preventDefault();
+
+                $("#login_form").hide();
+                $("#retrieve_password_form").css("display", "block");
+            });
+            $('#back').click(function(e) {
+                e.preventDefault();
+
+                $("#retrieve_password_form").hide();
+                $("#login_form").css("display", "block");
+            });
+            $('#send_password').click(function(e) {
+                e.preventDefault();
+
+                submitRetrievePswForm();
+            });
+        });
+
+        function setFocus() {
+            var email = $("#login_user_email").val();
+            if ("" == email) {
+                $("#login_user_email").focus();
+            } else {
+                $("#login_user_password").focus();
+            }
+        }
+
+        function submitRetrievePswForm() {
+            var email = $("#retrieve").val();
+            $.getJSON(
+                '/data/anonymous_handler.php?action=User::AJAX_A_ValidateEmail', 
+                {email_address:email},
+                function(data){
+                    if(0==data.errors.length){
+                        $("#retrieve_password_form").submit();
+                        $("#retrieve_password").dialog("close");
+                    }else{
+                        var element = $("<span></span>");
+                        element.html('Your email address failed the following validation:<ul><li>' + data.errors.join('</li><li>') + '</li></ul>');
+                        $(".message-wrapper").append(element);
+                    }
+
+                }
+            );
+        }
+    </script>
+        <script>
+            window.support_label = "";
+        </script>
+</head>
+<body id="main_body" class="responsive  light">
+
+
+    <div class="login-bg">
+        <div class="wrapper"></div>
+    </div>
+    <div class="login-col">
+        <form id="login_form" action="/login_check" method="post">
+            <div class="message-wrapper">
+                            </div>
+            <img src="images/e339744c-4cd9-42b1-9189-11c0d9b695cc.jpg" class="login-logo">
+            <input type="text" id="login_user_email" name="login[user_email]" required="required" value placeholder="Email" class="form-control">
+            <input type="password" id="login_user_password" name="login[user_password]" required="required" placeholder="Password" class="form-control">
+            <button type="submit" id="login_login" name="login[login]">login</button>
+            <div class="problems"><a href="#" id="retrieve-password">Having problems logging in?</a></div>
+            <div class="login-footer">
+                <p>Administrative Queries: <a href="mailto:myschool@sananton.edu.mt">myschool@sananton.edu.mt</a></p>
+                <p>WARNING: Unauthorized access to this system is forbidden and will be prosecuted by law.</p>
+                <p>By accessing this system, you agree that your actions may be monitored if unauthorized usage is
+                    suspected</p>
+            </div>
+        </form>
+        <form id="retrieve_password_form" method="post" action="/forgot-password" autocomplete="off">
+            <div class="message-wrapper">
+            </div>
+            <img src="images/e339744c-4cd9-42b1-9189-11c0d9b695cc.jpg" class="login-logo">
+            <p>Please type your email address in the box below and click the 'send' button. We will send you an email with additional instructions.</p>
+            <input name="retrieve" id="retrieve" class="form-control" placeholder="Email Address">
+            <p>Do check your spam or junk folder if you do not receive the new password.</p>
+            <button type="submit" id="send_password">send</button>
+            <div class="problems"><a href="#" id="back">< Back to login</a></div>
+        </form>
+    </div>
+
+
+
+
+
+<div id="msm-portal-root" class="msm-app">
+</div>
+
+<script>
+    $('.nav-sidebar .navigation .has-children[data-header-id=' + $('html').data('nav-header') + ']').addClass('active');
+    $(".nav-sidebar").niceScroll({horizrailenabled:false});
+    $(".nav-sidebar ul.navigation li.has-children").click(function(){
+        var activeClicked = $(this).hasClass("active");
+        $(".nav-sidebar ul.navigation > li").removeClass("active");
+        if(!activeClicked){
+            $(this).addClass("active");
+        }
+        $(".nav-sidebar").getNiceScroll().resize();
+    });
+    $(".nav-sidebar ul.navigation li.has-children li, #_switch_student").click(function(e){
+        e.stopPropagation();
+    });
+    $(".right-sidebar ul.nav > li").click(function(){
+        var navbarActive = $(".right-sidebar-wrapper").hasClass("active");
+        var tabActive = $(this).hasClass("active");
+        if(!navbarActive){
+            tabActive = false;
+            $(".right-sidebar-wrapper").addClass("active");
+            $("body").addClass("with-overlay");
+            var numberOfTabs = $(".right-sidebar-wrapper.active .right-sidebar ul.nav li").length;
+            if(numberOfTabs){
+                var tabWidth = 100 / numberOfTabs;
+                $(".right-sidebar-wrapper.active .right-sidebar ul.nav li").css("width", tabWidth + "%");
+            }
+        }
+        if(!tabActive) {
+            $(".right-sidebar ul.nav > li").removeClass("active");
+            $(this).addClass("active");
+            $(".right-sidebar .tab-content").removeClass("active");
+            var selectedTab = $(this).data("tab");
+            $(".right-sidebar .tab-content#" + selectedTab).addClass("active");
+        }
+        if($(this).hasClass("search")){
+            $("#interface_search").focus();
+        }
+    });
+    $(".right-sidebar-overlay").click(function () {
+        $(".right-sidebar-wrapper").removeClass("active");
+        $("body").removeClass("with-overlay");
+        $(".right-sidebar-wrapper .tab-content").removeClass("active");
+    });
+
+    if($('#interface_search').length){
+
+        var focusedOnUser = false;
+        $('#interface_search').autocomplete({
+            source: function( request, response ) {
+                $.ajax( {
+                    url: "/data/admin_data.php?action=Super_Search::AJAX_Search&search_string=" + request.term,
+                    success: function( data ) {
+                        response( data );
+                    }
+                } );
+            },
+            minLength: 3,
+            open: function() {
+                $(this).autocomplete("widget")
+                    .appendTo("#results")
+                    .css("position", "static");
+                $("#results .ui-autocomplete").niceScroll({horizrailenabled:false});
+            },
+            select: function (event, ui) {
+                event.preventDefault();
+                eval(ui.item.action);
+                $('#interface_search').val('');
+                $(".qtip").remove();
+                return false;
+            },
+            close: function(event, ui) {
+                $(".qtip").remove();
+                focusedOnUser = false;
+            },
+            focus: function (event, ui) {
+                event.preventDefault();
+                if($(window).width() >= 700 && focusedOnUser !== ui.item.id){
+                    focusedOnUser = ui.item.id;
+                    setTimeout(function () {
+                        $('#ui-active-menuitem').qtip({
+                            content: {
+                                text: 'Loading...',
+                                ajax: {
+                                    url: '/data/admin_data.php?action=Super_Search::AJAX_GetOverview&category=' + ui.item.category + '&id=' + ui.item.id,
+                                    type: 'GET'
+                                }
+                            },
+                            style: { classes: ['search-result-qtip'] },
+                            position: {
+                                my: 'right center', at: 'left center',
+                                effect: function (api, pos, viewport) {
+                                    $(this).animate(pos, {
+                                        duration: 50,
+                                        easing: 'linear',
+                                        queue: false,
+                                        opacity: 0.25
+                                    });
+                                }
+                            },
+                            show: {
+                                event: 'click',
+                                solo: true
+                            },
+                            hide: 'unfocus'
+                        });
+                        $('#ui-active-menuitem').qtip('show');
+                    }, 500);
+                }
+            },
+        }).data( "autocomplete" )._renderItem = function( ul, item ) {
+
+            var element = $("<a></a>");
+
+            var resultLabel = $("<div></div>");
+            resultLabel.addClass("result-label");
+            resultLabel.html(item.label);
+
+            var tags = $("<ul></ul>");
+            tags.addClass("tags");
+
+            var meta = item.tags;
+            var metaParts = meta.split(", ");
+            $.each(metaParts, function( index, value ) {
+                var tag = $("<li></li>");
+                tag.addClass(value);
+                tag.html(value);
+                tags.append(tag);
+            });
+
+            resultLabel.append(tags);
+
+            element.append(resultLabel);
+
+
+            var extra = $("<div></div>");
+            extra.addClass("extra");
+
+
+
+            var icon = $("<div></div>");
+            var icon = icon.addClass("icon");
+
+            if (item.picture !== undefined){
+                icon.css('background-image', 'url(' + item.picture + ')');
+                icon.addClass("has-picture");
+            }else{
+                icon.addClass("no-picture");
+                icon.addClass(item.icon);
+            }
+
+            element.prepend(icon);
+
+            extra.html(item.meta);
+
+            element.append(extra);
+
+            return $("<li></li>")
+                .attr("title",'ID: '+item.id)
+                .data("item.autocomplete",item)
+                .append(element)
+                .appendTo(ul);
+        };
+    }
+
+    $(".nav-sidebar .burger").click(function () {
+       $("body").addClass("nav-sidebar-open");
+        $(".nav-sidebar").getNiceScroll().resize()
+    });
+
+    $(".nav-sidebar .close-menu").click(function () {
+       $("body").removeClass("nav-sidebar-open");
+        $(".nav-sidebar").getNiceScroll().resize()
+    });
+
+</script>
+<script src="js/main.bundle.js" crossorigin></script>
+
+</body>
+</html>

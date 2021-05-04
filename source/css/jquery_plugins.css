@@ -1,0 +1,1023 @@
+/*******************************************************************************
+*	UPLOADIFY
+*******************************************************************************/
+.uploadify {position: relative}
+.uploadify-button {
+	float:right;background-color: #505050;background-image: linear-gradient(bottom, #505050 0%, #707070 100%);background-image: -o-linear-gradient(bottom, #505050 0%, #707070 100%);background-image: -moz-linear-gradient(bottom, #505050 0%, #707070 100%);background-image: -webkit-linear-gradient(bottom, #505050 0%, #707070 100%);
+	background-image: -ms-linear-gradient(bottom, #505050 0%, #707070 100%);background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #505050),color-stop(1, #707070));background-position: center top;background-repeat: no-repeat;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border: 2px solid #808080;color: #FFF;font: bold 12px Arial, Helvetica, sans-serif;text-align: center;	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);	width: 100%;}
+.uploadify:hover .uploadify-button {background-color: #606060;background-image: linear-gradient(top, #606060 0%, #808080 100%);background-image: -o-linear-gradient(top, #606060 0%, #808080 100%);background-image: -moz-linear-gradient(top, #606060 0%, #808080 100%);background-image: -webkit-linear-gradient(top, #606060 0%, #808080 100%);background-image: -ms-linear-gradient(top, #606060 0%, #808080 100%);background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #606060),color-stop(1, #808080));background-position: center bottom;}
+.uploadify-button.disabled {background-color: #D0D0D0;color: #808080;}
+.uploadify-queue {margin-bottom: 1em;}
+.uploadify-queue-item {background-color: #F5F5F5;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;font: 11px Verdana, Geneva, sans-serif;margin-top: 5px;max-width: 350px;padding: 10px;}
+.uploadify-error {background-color: #FDE5DD !important;}
+.uploadify-queue-item .cancel a {background: url('../images/cancel.png') 0 0 no-repeat;float: right;height:16px;text-indent: -9999px;width: 16px;}
+.uploadify-queue-item.completed {background-color: #E5E5E5;}
+.uploadify-progress {background-color: #E5E5E5;	margin-top: 10px;width: 100%;}
+.uploadify-progress-bar {background-color: #0099FF;height: 3px;width:1px;}
+
+/*******************************************************************************
+*	TABLE SORTER
+*******************************************************************************/
+thead tr.tablesorter-headerRow .tablesorter-header {background-image: url(../images/bg.gif);background-repeat: no-repeat;background-position: -7px;padding-left:10px;cursor: pointer;text-decoration: underline;}
+thead tr.tablesorter-headerRow .tablesorter-header.tablesorter-headerAsc {background-image:url(../images/asc.gif);}
+thead tr.tablesorter-headerRow .tablesorter-header.tablesorter-headerDesc {background-image:url(../images/desc.gif);}
+
+/*******************************************************************************
+*   SPELL CHECKER
+*******************************************************************************/
+.spellchecker-suggestbox{position:absolute;display:none;z-index:9999;overflow:none;font:normal 13px arial;box-shadow:0 0 4px #aaa;background:#fff;border:1px solid #bbb}.spellchecker-suggestbox .loading{padding:3px 6px;font-style:italic}.spellchecker-suggestbox a{outline:0;cursor:pointer;color:#333;padding:3px 6px;display:block;text-decoration:none}.spellchecker-suggestbox a:hover{color:#000;background:#ddd}.spellchecker-suggestbox .footer{border-top:1px solid #ddd}.spellchecker-suggestbox .footer .ignore-all,.spellchecker-suggestbox .footer .ignore-forever{display:none}.spellchecker-word-highlight{color:red;cursor:pointer;border-bottom:1px dotted red}.spellchecker-incorrectwords{display:none;background-color: #FFD7D7}.spellchecker-incorrectwords a{display:inline-block;margin-right:.5em;color:#B10000 !important}.spellchecker-button-icon{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHtSURBVDjLY/j//z8DJZiBKgY49drM9J3idhLEtu+xjvea4nLNqsVspnWr2S6QmF6+Zol2ltpq5QSlmcpxijMxDABp9pjkuMuu28rIpsMi3rLZFKzIus38mm6OuqRxpf41nC5w7rOJd+i1ngnUXGLTbj7Tsskk3rbL8ppZreEu7Ry1mWpJSvHK8Uoz0TWK5U/nYIg8y8rgPsl+l12P1WqgbTPdJtk/AtoWb1CkBdagnqyyWilawVM/Rw/FBQyx540ZGm/eYIg8P43BdYLdSZiEcYXeTJB/TaoNroH8q5OldVIhXE5SKUqhXSNRfZdKvPKVkOrED+L9d/8wN998w+B4XIL40I48K8FQf/O6+7In/7mbb35hsD2qjBKNDLU3ExjKb7pi1Rx61ke89+6fwBVP/jPXXn/HYHlYGiMdMJTe1JJc/PgHQ/X1xQyplznBYuFnmRiiz062nPfof8DSJ/8ZSq8/ZzA9KIEzIQE1Vvuuf/6fufv2M4bgsz4MxVdPui8Cal4C1Jx/+RGDPqpmTANiz7MAvXI+bO2L/5ZzHvzP2Pjif8DCx/8ZMi/fY9DcL0FUUmbwPKkg3Hr7T+WOV//95j/8z5B6/jaD6l4JkvIC0J9FTtPu/2dIPn+PQXG3BFmZiUFzbweDLH7NVMmNAOGld33BRiNUAAAAAElFTkSuQmCC)!important;background-repeat:no-repeat;background-position:center center}
+
+/*******************************************************************************
+*	GRAPHS
+*******************************************************************************/
+.legend div {width:14px;}
+.legend table {width:150px;font-size:10px;}
+
+/*******************************************************************************
+*	ERROR HANDLING
+*******************************************************************************/
+label.error{border:0px solid red;}
+.error{border:1px solid red !important;color:red !important;background-color:#FFEEE8 !important}
+.label{color:#999;font-style:italic;font-size:11px;padding-left:5px;}
+
+/*******************************************************************************
+*	jQuery star
+*******************************************************************************/
+.ui-stars-star,.ui-stars-cancel{float:left;display:block;overflow:hidden;text-indent:-999em;cursor:pointer;}
+.ui-stars-star a,.ui-stars-cancel a{width:16px;height:15px;display:block;background:url(../images/ui.stars.gif) no-repeat 0 0;}
+.ui-stars-star a{background-position:0 -32px;}
+.ui-stars-star-on a{background-position:0 -48px;}
+.ui-stars-star-hover a{background-position:0 -64px;}
+.ui-stars-cancel-hover a{background-position:0 -16px;}
+.ui-stars-star-disabled,.ui-stars-star-disabled a,.ui-stars-cancel-disabled a{cursor:default!important;}
+
+/* typeahead rules. Needed only if you are using the autocomplete feature */
+.typeahead {
+  position: absolute;font-family: Arial, Helvetica, sans-serif;line-height: 1.3em;font-size: 13px;z-index: 10;  top: 100%;left: 0;float: left;display: none;min-width: 160px;
+  padding: 4px 0;margin: 0;list-style: none;background-color: white;border-color: #CCC;border-color: rgba(0, 0, 0, 0.2);border-style: solid;border-width: 1px;-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);-webkit-background-clip: padding-box;-moz-background-clip: padding;background-clip: padding-box;
+  margin-top: 2px;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;
+}
+.typeahead li {line-height: 18px;display: list-item;}
+.typeahead a {display: block;padding: 3px 15px;clear: both; font-weight: normal;line-height: 18px;color: #333;white-space: nowrap;}
+.typeahead li > a:hover, .typeahead .active > a, .typeahead .active > a:hover {color: white;text-decoration: none;background-color: #08C;}
+.typeahead a {color: #08C;text-decoration: none;}
+
+/*context menu rules*/
+ul.context-menu-list {color: black;}
+
+
+
+/*******************************************************************************
+ * FullCalendar v1.6.4 Print Stylesheet
+ * Docs & License: http://arshaw.com/fullcalendar/
+ * (c) 2013 Adam Shaw
+ *
+ * Include this stylesheet on your page to get a more printer-friendly calendar.
+ * When including this stylesheet, use the media='print' attribute of the <link> tag.
+ * Make sure to include this stylesheet IN ADDITION to the regular fullcalendar.css.
+ *
+ * FullCalendar v1.6.4 Stylesheet
+ * Docs & License: http://arshaw.com/fullcalendar/
+ * (c) 2013 Adam Shaw
+*******************************************************************************/
+.fc {direction: ltr;text-align: left;}
+.fc table {border-collapse: collapse;border-spacing: 0;}
+html .fc, .fc table { font-size: 1em;}
+.fc td,.fc th {padding: 0;vertical-align: top;}
+
+/* Header
+------------------------------------------------------------------------*/
+.fc-header td {white-space: nowrap;}
+.fc-header-left {width: 25%;text-align: left;}
+.fc-header-center {text-align: center;}	
+.fc-header-right {width: 25%;text-align: right;}
+.fc-header-title {display: inline-block;vertical-align: top;}
+.fc-header-title h2 {margin-top: 0;white-space: nowrap;}
+.fc .fc-header-space {padding-left: 10px;}
+.fc-header .fc-button {margin-bottom: 1em;vertical-align: top;}
+	
+/* buttons edges butting together */
+.fc-header .fc-button {margin-right: -1px;}
+.fc-header .fc-corner-right, .fc-header .ui-corner-right {margin-right: 0;}
+	
+/* button layering (for border precedence) */
+.fc-header .fc-state-hover,.fc-header .ui-state-hover {z-index: 2;}
+.fc-header .fc-state-down {z-index: 3;}
+.fc-header .fc-state-active,.fc-header .ui-state-active {z-index: 4;}
+	
+/* Content
+------------------------------------------------------------------------*/
+.fc-content {clear: both;zoom: 1;}
+.fc-view {width: 100%;overflow: hidden;}	
+
+/* Cell Styles
+------------------------------------------------------------------------*/
+
+.fc-widget-header,.fc-widget-content {border: 1px solid #ddd;}
+.fc-state-highlight {background: #fcf8e3;}
+.fc-cell-overlay {background: #bce8f1;opacity: .3;filter: alpha(opacity=30);}
+
+/* Buttons
+------------------------------------------------------------------------*/
+
+.fc-button {position: relative;display: inline-block;padding: 0 .6em;overflow: hidden;height: 1.9em;line-height: 1.9em;white-space: nowrap;cursor: pointer;}
+.fc-state-default {border: 1px solid;}
+.fc-state-default.fc-corner-left {border-top-left-radius: 4px;border-bottom-left-radius: 4px;}
+.fc-state-default.fc-corner-right {border-top-right-radius: 4px;border-bottom-right-radius: 4px;}
+
+/*
+	Our default prev/next buttons use HTML entities like &lsaquo; &rsaquo; &laquo; &raquo;
+	and we'll try to make them look good cross-browser.
+*/
+
+.fc-text-arrow {margin: 0 .1em;font-family: "Courier New", Courier, monospace;vertical-align: baseline;}
+.fc-button-prev .fc-text-arrow,.fc-button-next .fc-text-arrow {font-weight: bold;}
+
+/* icon (for jquery ui) */
+.fc-button .fc-icon-wrap {position: relative;float: left;top: 50%;}	
+.fc-button .ui-icon {position: relative;float: left;margin-top: -50%;*margin-top: 0;*top: -50%;}
+	
+/*
+  button states
+  borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/)
+*/
+
+.fc-state-default {
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	color: #333;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	}
+
+.fc-state-hover,.fc-state-down,.fc-state-active,.fc-state-disabled {color: #333333;background-color: #e6e6e6;}
+.fc-state-hover {color: #333333;text-decoration: none;background-position: 0 -15px;-webkit-transition: background-position 0.1s linear;-moz-transition: background-position 0.1s linear;-o-transition: background-position 0.1s linear;transition: background-position 0.1s linear;}
+.fc-state-down,.fc-state-active {background-color: #cccccc;background-image: none;outline: 0;box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);}
+.fc-state-disabled {cursor: default;background-image: none;opacity: 0.65;filter: alpha(opacity=65);box-shadow: none;}
+
+/* Global Event Styles
+------------------------------------------------------------------------*/
+.fc-event-container > * {z-index: 8;}
+.fc-event-container > .ui-draggable-dragging,
+.fc-event-container > .ui-resizable-resizing {z-index: 9;}	 
+.fc-event {border: 1px solid #000;background-color: #000;color: #fff;font-size: .85em;cursor: pointer;}
+a.fc-event {text-decoration: none;}	
+a.fc-event,.fc-event-draggable {cursor: pointer;}
+.fc-rtl .fc-event {text-align: right;}
+.fc-event-inner {width: 100%;height: 100%;overflow: hidden;line-height: 1}
+.fc-event-time,.fc-event-title {padding: 0 1px;white-space: nowrap;}
+.fc-event-info{white-space: nowrap;font-style: italic;font-size: 10px;}
+.fc .ui-resizable-handle {display: block;position: absolute;z-index: 99999;overflow: hidden; /* hacky spaces (IE6/7) */	font-size: 300%;line-height: 50%;}		
+	
+/* Horizontal Events
+------------------------------------------------------------------------*/
+
+.fc-event-hori {border-width: 1px 0;margin-bottom: 1px;}
+.fc-ltr .fc-event-hori.fc-event-start,.fc-rtl .fc-event-hori.fc-event-end {border-left-width: 1px;border-top-left-radius: 3px;border-bottom-left-radius: 3px;}
+.fc-ltr .fc-event-hori.fc-event-end,.fc-rtl .fc-event-hori.fc-event-start {border-right-width: 1px;border-top-right-radius: 3px;border-bottom-right-radius: 3px;}
+/* resizable */
+.fc-event-hori .ui-resizable-e {top: 0 !important;right: -3px !important;width: 7px !important;height: 100% !important;cursor: e-resize;}
+.fc-event-hori .ui-resizable-w {top: 0 !important;left: -3px !important;width: 7px !important;height: 100% !important;cursor: w-resize;}
+.fc-event-hori .ui-resizable-handle {_padding-bottom: 14px;}
+
+/* Reusable Separate-border Table
+------------------------------------------------------------*/
+table.fc-border-separate {border-collapse: separate;}	
+.fc-border-separate th,.fc-border-separate td {border-width: 1px 0 0 1px;}	
+.fc-border-separate th.fc-last,
+.fc-border-separate td.fc-last {border-right-width: 1px;}
+.fc-border-separate tr.fc-last th,.fc-border-separate tr.fc-last td {border-bottom-width: 1px;}	
+.fc-border-separate tbody tr.fc-first td,
+.fc-border-separate tbody tr.fc-first th {border-top-width: 0;}
+
+/* Month View, Basic Week View, Basic Day View
+------------------------------------------------------------------------*/
+.fc-grid th {text-align: center;}
+.fc .fc-week-number {width: 22px;text-align: center;}
+.fc .fc-week-number div {padding: 0 2px;}	
+.fc-grid .fc-day-number {float: right;padding: 0 2px;}	
+.fc-grid .fc-other-month .fc-day-number {opacity: 0.3;filter: alpha(opacity=30);}
+.fc-grid .fc-day-content {clear: both;padding: 2px 2px 1px;}
+/* event styles */
+.fc-grid .fc-event-time {font-weight: bold;}
+/* right-to-left */
+.fc-rtl .fc-grid .fc-day-number {float: left;}
+.fc-rtl .fc-grid .fc-event-time {float: right;}	
+
+/* Agenda Week View, Agenda Day View
+------------------------------------------------------------------------*/
+.fc-agenda table {border-collapse: separate;}	
+.fc-agenda-days th {text-align: center;}
+.fc-agenda .fc-agenda-axis {width: 50px;padding: 0 4px;vertical-align: middle;text-align: right;white-space: nowrap;font-weight: normal;}
+.fc-agenda .fc-week-number {font-weight: bold;}
+.fc-agenda .fc-day-content {padding: 2px 2px 1px;}
+/* make axis border take precedence */
+.fc-agenda-days .fc-agenda-axis {border-right-width: 1px;}	
+.fc-agenda-days .fc-col0 {border-left-width: 0;}	
+/* all-day area */
+.fc-agenda-allday th {border-width: 0 1px;}
+.fc-agenda-allday .fc-day-content {min-height: 34px;_height: 34px;}
+/* divider (between all-day and slots) */
+.fc-agenda-divider-inner {height: 2px;overflow: hidden;}	
+.fc-widget-header .fc-agenda-divider-inner {background: #eee;}	
+/* slot rows */
+	
+.fc-agenda-slots th {border-width: 1px 1px 0;}	
+.fc-agenda-slots td {border-width: 1px 0 0;background: none;}
+.fc-agenda-slots td div {height: 20px;}
+.fc-agenda-slots tr.fc-slot0 th,.fc-agenda-slots tr.fc-slot0 td {border-top-width: 0;}
+.fc-agenda-slots tr.fc-minor th,.fc-agenda-slots tr.fc-minor td {border-top-style: dotted;}
+.fc-agenda-slots tr.fc-minor th.ui-widget-header {*border-top-style: solid;}
+
+/* Vertical Events
+------------------------------------------------------------------------*/
+.fc-event-vert {border-width: 0 1px;}
+.fc-event-vert.fc-event-start {border-top-width: 1px;border-top-left-radius: 3px;border-top-right-radius: 3px;}
+.fc-event-vert.fc-event-end {border-bottom-width: 1px;border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;}
+.fc-event-vert .fc-event-time {white-space: nowrap;font-size: 10px;font-weight: bold;}
+.fc-event-vert .fc-event-inner {position: relative;z-index: 2;}
+.fc-event-vert .fc-event-bg {position: absolute;z-index: 1;	top: 0;	left: 0;	width: 100%;	height: 100%;	background: #fff;	opacity: .25;	filter: alpha(opacity=25);	}
+.fc .ui-draggable-dragging .fc-event-bg, .fc-select-helper .fc-event-bg {display: none\9; }
+.fc-event-vert .ui-resizable-s {bottom: 0 !important; width: 100% !important;height: 8px      !important;overflow: hidden !important;line-height: 8px !important;font-size: 11px  !important;font-family: monospace;text-align: center;cursor: s-resize;}
+.fc-agenda .ui-resizable-resizing {_overflow: hidden;}
+
+@media print{
+	.fc-event {background: #fff !important;color: #000 !important;}
+	.fc-event-bg {display: none !important;}	
+	.fc-event .ui-resizable-handle {display: none !important;}
+}
+
+
+/*******************************************************************************
+*	Timepicker
+*******************************************************************************/
+div.time-picker {position: absolute;height: 170px;width:5em; /* needed for IE */ overflow: auto; background: #fff;border: 1px solid #aaa;z-index: 9999;margin: 0;}
+div.time-picker-12hours {width:6em; /* needed for IE */}
+div.time-picker ul {list-style-type: none;margin: 0;padding: 0;}
+div.time-picker li {cursor: pointer;height: 10px;font: 12px/1 Helvetica, Arial, sans-serif;padding: 4px 3px;}
+div.time-picker li.selected {background: #0063CE;color: #fff;}
+
+/* simpleTreeMenu */
+ul.simpleTreeMenu {line-height: 1.75em;margin-top: 0px;margin-bottom: 0px;}
+ul.simpleTreeMenu, ul.simpleTreeMenu ul {margin-left: 0px;padding-left: 15px;}
+ul.simpleTreeMenu li.Node {list-style-image: url("../images/folder-closed.gif");margin-left: 5px;padding: 0px;}
+ul.simpleTreeMenu li.Node span {cursor: pointer;display: block;}
+ul.simpleTreeMenu li.Node span:hover {background-color: #d8d8d0;}
+ul.simpleTreeMenu li.expanded {list-style-image: url("../images/folder.gif");}
+ul.simpleTreeMenu li.Leaf {	list-style-image: url("../images/file.gif");margin-left: 5px;padding: 0px;}
+ul.simpleTreeMenu li.Config {list-style-image: url("../images/file.gif");margin-left:-15px;padding: 0px;}
+ul.simpleTreeMenu li.Action {list-style-image: none;list-style-type:none;margin-left:-15px;padding: 0px;}
+
+
+/*
+* qTip2 - Pretty powerful tooltips
+* http://craigsworks.com/projects/qtip2/
+*
+* Version: nightly
+* Copyright 2009-2010 Craig Michael Thompson - http://craigsworks.com
+*
+* Dual licensed under MIT or GPLv2 licenses
+*   http://en.wikipedia.org/wiki/MIT_License
+*   http://en.wikipedia.org/wiki/GNU_General_Public_License
+*
+* Date: Thu Oct 20 13:41:21.0000000000 2011
+*/
+.qtip{max-height:500px;overflow-y:auto;position:absolute;left:-28000px;top:-28000px;display:none;max-width:800px;min-width:50px;direction:ltr;box-shadow:none;padding:0}.qtip-content,.qtip-titlebar{position:relative;overflow:hidden}.qtip-content{padding:5px 9px;text-align:left;word-wrap:break-word}.qtip-titlebar{padding:5px 35px 5px 10px;border-width:0 0 1px;font-weight:700}.qtip-titlebar+.qtip-content{border-top-width:0!important}.qtip-close{position:absolute;right:-9px;top:-9px;z-index:11;cursor:pointer;outline:0;border:1px solid transparent}.qtip-titlebar .qtip-close{right:4px;top:50%;margin-top:-9px}* html .qtip-titlebar .qtip-close{top:16px}.qtip-icon .ui-icon,.qtip-titlebar .ui-icon{display:block;text-indent:-1000em;direction:ltr}.qtip-icon,.qtip-icon .ui-icon{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;text-decoration:none}.qtip-icon .ui-icon{width:18px;height:14px;line-height:14px;text-align:center;text-indent:0;font:normal 700 10px/13px Tahoma,sans-serif;color:inherit;background:-100em -100em no-repeat}.qtip-default{border:1px solid #F1D031;background-color:#FFFFA3;color:#555}.qtip-default .qtip-titlebar{background-color:#FFEF93}.qtip-default .qtip-icon{border-color:#CCC;background:#F1F1F1;color:#777}.qtip-default .qtip-titlebar .qtip-close{border-color:#AAA;color:#111}
+/* Core qTip styles */
+
+/*******************************************************************************
+*	Colour picker
+*******************************************************************************/
+.jPicker .Icon{display:inline-block;height:24px;position:relative;text-align:left;width:25px}
+.jPicker .Icon span.Color,.jPicker .Icon span.Alpha{background-position:2px 2px;display:block;height:100%;left:0;position:absolute;top:0;width:100%}
+.jPicker .Icon span.Image{background-repeat:no-repeat;cursor:pointer;display:block;height:100%;left:0;position:absolute;top:0;width:100%}
+.jPicker.Container{color:#000;z-index:10}
+table.jPicker{background-color:#efefef;border:1px outset #666;font-family:Arial,Helvetica,Sans-Serif;font-size:12px!important;margin:0;padding:5px;width:545px;z-index:2000}
+.jPicker .Move{background-color:#ddd;border-color:#fff #666 #666 #fff;border-style:solid;border-width:1px;cursor:move;height:12px;padding:0}
+.jPicker .Title{font-size:11px!important;font-weight:bold;margin:-2px 0 0 0;padding:10px 0 0 0;text-align:center;width:100%}
+.jPicker div.Map{border-bottom:2px solid #fff;border-left:2px solid #9a9a9a;border-right:2px solid #fff;border-top:2px solid #9a9a9a;cursor:crosshair;height:260px;margin:0 10px 10px 10px;overflow:hidden;padding:0;position:relative;width:260px}
+.jPicker div[class="Map"]{height:256px;width:256px}
+.jPicker div.Bar{border-bottom:2px solid #fff;border-left:2px solid #9a9a9a;border-right:2px solid #fff;border-top:2px solid #9a9a9a;cursor:n-resize;height:260px;margin:12px 10px 0 5px;overflow:hidden;padding:0;position:relative;width:24px}
+.jPicker div[class="Bar"]{height:256px;width:20px}
+.jPicker .Map .Map1,.jPicker .Map .Map2,.jPicker .Map .Map3,.jPicker .Bar .Map1,.jPicker .Bar .Map2,.jPicker .Bar .Map3,.jPicker .Bar .Map4,.jPicker .Bar .Map5,.jPicker .Bar .Map6{background-color:transparent;background-image:none;display:block;left:0;position:absolute;top:0}
+.jPicker .Map .Map1,.jPicker .Map .Map2,.jPicker .Map .Map3{height:2596px;width:256px}
+.jPicker .Bar .Map1,.jPicker .Bar .Map2,.jPicker .Bar .Map3,.jPicker .Bar .Map4{height:3896px;width:20px}
+.jPicker .Bar .Map5,.jPicker .Bar .Map6{height:256px;width:20px}
+.jPicker .Map .Map1,.jPicker .Map .Map2,.jPicker .Bar .Map6{background-repeat:no-repeat}
+.jPicker .Map .Map3,.jPicker .Bar .Map5{background-repeat:repeat}
+.jPicker .Bar .Map1,.jPicker .Bar .Map2,.jPicker .Bar .Map3,.jPicker .Bar .Map4{background-repeat:repeat-x}
+.jPicker .Map .Arrow{display:block;position:absolute}
+.jPicker .Bar .Arrow{display:block;left:0;position:absolute}
+.jPicker .Preview{font-size:9px;padding:5px 0 0 0;text-align:center}
+.jPicker .Preview div{border:2px inset #eee;height:62px;margin:0 auto;padding:0;width:62px}
+.jPicker .Preview div span{border:1px solid #000;display:block;height:30px;margin:0 auto;padding:0;width:60px}
+.jPicker .Preview .Active{border-bottom-width:0}
+.jPicker .Preview .Current{border-top-width:0;cursor:pointer}
+.jPicker input{font-size:13px}
+.jPicker .Button{text-align:center;padding:0 4px;width:115px}
+.jPicker .Button input{padding:2px 0;width:100px}
+.jPicker .Button .Ok{margin:12px 0 5px 0}
+.jPicker td{margin:0;padding:0}
+.jPicker td.Radio{margin:0;padding:0;width:31px}
+.jPicker td.Radio input{margin:0 5px 0 0;padding:0;width:15px;}
+.jPicker td.Text{font-size:12px!important;height:22px;margin:0;padding:0;text-align:left;width:70px}
+.jPicker tr.Hex td.Text{width:100px}
+.jPicker td.Text input{background-color:#fff;border:1px inset #aaa;height:19px;margin:0 0 0 5px;text-align:left;width:30px}
+.jPicker td[class="Text"] input{height:15px}
+.jPicker tr.Hex td.Text input.Hex{width:50px}
+.jPicker tr.Hex td.Text input.AHex{width:20px}
+.jPicker .Grid{text-align:center;width:114px}
+.jPicker .Grid span.QuickColor{border:1px inset #aaa;cursor:pointer;display:inline-block;height:15px;line-height:15px;margin:0;padding:0;width:19px}
+.jPicker .Grid span[class="QuickColor"]{width:17px}
+
+/*Grid*/
+.ui-jqgrid {position: relative;}
+.ui-jqgrid .ui-jqgrid-view {position: relative;left:0px; top: 0px; padding: .0em; font-size:11px;}
+/* caption*/
+.ui-jqgrid .ui-jqgrid-titlebar {padding: .3em .2em .2em .3em; position: relative; border-left: 0px none;border-right: 0px none; border-top: 0px none;}
+.ui-jqgrid .ui-jqgrid-title { float: left; margin: .1em 0 .2em; }
+.ui-jqgrid .ui-jqgrid-titlebar-close { position: absolute;top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height:18px;}.ui-jqgrid .ui-jqgrid-titlebar-close span { display: block; margin: 1px; }
+.ui-jqgrid .ui-jqgrid-titlebar-close:hover { padding: 0; }
+/* header*/
+.ui-jqgrid .ui-jqgrid-hdiv {position: relative; margin: 0em;padding: 0em; overflow-x: hidden; border-left: 0px none !important; border-top : 0px none !important; border-right : 0px none !important;}
+.ui-jqgrid .ui-jqgrid-hbox {float: left; padding-right: 20px;}
+.ui-jqgrid .ui-jqgrid-htable {table-layout:fixed;margin:0em;}
+.ui-jqgrid .ui-jqgrid-htable th {height:22px;padding: 0 2px 0 2px;}
+.ui-jqgrid .ui-jqgrid-htable th div {overflow: hidden; position:relative; height:17px;}
+.ui-th-column, .ui-jqgrid .ui-jqgrid-htable th.ui-th-column {overflow: hidden;white-space: nowrap;text-align:center;border-top : 0px none;border-bottom : 0px none;}
+.ui-th-ltr, .ui-jqgrid .ui-jqgrid-htable th.ui-th-ltr {border-left : 0px none;}
+.ui-th-rtl, .ui-jqgrid .ui-jqgrid-htable th.ui-th-rtl {border-right : 0px none;}
+.ui-first-th-ltr {border-right: 1px solid; }
+.ui-first-th-rtl {border-left: 1px solid; }
+.ui-jqgrid .ui-th-div-ie {white-space: nowrap; zoom :1; height:17px;}
+.ui-jqgrid .ui-jqgrid-resize {height:20px !important;position: relative; cursor :e-resize;display: inline;overflow: hidden;}
+.ui-jqgrid .ui-grid-ico-sort {overflow:hidden;position:absolute;display:inline; cursor: pointer !important;}
+.ui-jqgrid .ui-icon-asc {margin-top:-3px; height:12px;}
+.ui-jqgrid .ui-icon-desc {margin-top:3px;height:12px;}
+.ui-jqgrid .ui-i-asc {margin-top:0px;height:16px;}
+.ui-jqgrid .ui-i-desc {margin-top:0px;margin-left:13px;height:16px;}
+.ui-jqgrid .ui-jqgrid-sortable {cursor:pointer;}
+.ui-jqgrid tr.ui-search-toolbar th { border-top-width: 1px !important; border-top-color: inherit !important; border-top-style: ridge !important }
+tr.ui-search-toolbar input {margin: 1px 0px 0px 0px}
+tr.ui-search-toolbar select {margin: 1px 0px 0px 0px}
+/* body */
+.ui-jqgrid .ui-jqgrid-bdiv {position: relative; margin: 0em; padding:0; overflow: auto; text-align:left;}
+.ui-jqgrid .ui-jqgrid-btable {table-layout:fixed; margin:0em; outline-style: none; }
+.ui-jqgrid tr.jqgrow { outline-style: none; }
+.ui-jqgrid tr.jqgroup { outline-style: none; }
+.ui-jqgrid tr.jqgrow td {font-weight: normal; overflow: hidden; white-space: pre; height: 22px;padding: 0 2px 0 2px;border-bottom-width: 1px; border-bottom-color: inherit; border-bottom-style: solid;}
+.ui-jqgrid tr.jqgfirstrow td {padding: 0 2px 0 2px;border-right-width: 1px; border-right-style: solid;}
+.ui-jqgrid tr.jqgroup td {font-weight: normal; overflow: hidden; white-space: pre; height: 22px;padding: 0 2px 0 2px;border-bottom-width: 1px; border-bottom-color: inherit; border-bottom-style: solid;}
+.ui-jqgrid tr.jqfoot td {font-weight: bold; overflow: hidden; white-space: pre; height: 22px;padding: 0 2px 0 2px;border-bottom-width: 1px; border-bottom-color: inherit; border-bottom-style: solid;}
+.ui-jqgrid tr.ui-row-ltr td {text-align:left;border-right-width: 1px; border-right-color: inherit; border-right-style: solid;}
+.ui-jqgrid tr.ui-row-rtl td {text-align:right;border-left-width: 1px; border-left-color: inherit; border-left-style: solid;}
+.ui-jqgrid td.jqgrid-rownum { padding: 0 2px 0 2px; margin: 0px; border: 0px none;}
+.ui-jqgrid .ui-jqgrid-resize-mark { width:2px; left:0; background-color:#777; cursor: e-resize; cursor: col-resize; position:absolute; top:0; height:100px; overflow:hidden; display:none; border:0 none; z-index: 99999;}
+/* footer */
+.ui-jqgrid .ui-jqgrid-sdiv {position: relative; margin: 0em;padding: 0em; overflow: hidden; border-left: 0px none !important; border-top : 0px none !important; border-right : 0px none !important;}
+.ui-jqgrid .ui-jqgrid-ftable {table-layout:fixed; margin-bottom:0em;}
+.ui-jqgrid tr.footrow td {font-weight: bold; overflow: hidden; white-space:nowrap; height: 21px;padding: 0 2px 0 2px;border-top-width: 1px; border-top-color: inherit; border-top-style: solid;}
+.ui-jqgrid tr.footrow-ltr td {text-align:left;border-right-width: 1px; border-right-color: inherit; border-right-style: solid;}
+.ui-jqgrid tr.footrow-rtl td {text-align:right;border-left-width: 1px; border-left-color: inherit; border-left-style: solid;}
+/* Pager*/
+.ui-jqgrid .ui-jqgrid-pager { border-left: 0px none !important;border-right: 0px none !important; border-bottom: 0px none !important; margin: 0px !important; padding: 0px !important; position: relative; height: 25px;white-space: nowrap;overflow: hidden;font-size:11px;}
+.ui-jqgrid .ui-pager-control {position: relative;}
+.ui-jqgrid .ui-pg-table {position: relative; padding-bottom:2px; width:auto; margin: 0em;}
+.ui-jqgrid .ui-pg-table td {font-weight:normal; vertical-align:middle; padding:1px;}
+.ui-jqgrid .ui-pg-button  { height:19px !important;}
+.ui-jqgrid .ui-pg-button span { display: block; margin: 1px; float:left;}
+.ui-jqgrid .ui-pg-button:hover { padding: 0px; }
+.ui-jqgrid .ui-state-disabled:hover {padding:1px;}
+.ui-jqgrid .ui-pg-input { height:13px;font-size:.8em; margin: 0em;width:auto}
+.ui-jqgrid .ui-pg-selbox {font-size:.8em; line-height:18px; display:block; height:18px; margin: 0em;width:auto}
+.ui-jqgrid .ui-separator {height: 18px; border-left: 1px solid #ccc ; border-right: 1px solid #ccc ; margin: 1px; float: right;}
+.ui-jqgrid .ui-paging-info {font-weight: normal;height:19px; margin-top:3px;margin-right:4px;}
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-div {padding:1px 0;float:left;position:relative;}
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-button { cursor:pointer; }
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-div  span.ui-icon {float:left;margin:0 2px;}
+.ui-jqgrid td input, .ui-jqgrid td select .ui-jqgrid td textarea { margin: 0em;}
+.ui-jqgrid td textarea {width:auto;height:auto;}
+.ui-jqgrid .ui-jqgrid-toppager {border-left: 0px none !important;border-right: 0px none !important; border-top: 0px none !important; margin: 0px !important; padding: 0px !important; position: relative; height: 25px !important;white-space: nowrap;overflow: hidden;}
+.ui-jqgrid .ui-jqgrid-toppager .ui-pg-div {padding:1px 0;float:left;position:relative;}
+.ui-jqgrid .ui-jqgrid-toppager .ui-pg-button { cursor:pointer; }
+.ui-jqgrid .ui-jqgrid-toppager .ui-pg-div  span.ui-icon {float:left;margin:0 2px;}
+/*subgrid*/
+.ui-jqgrid .ui-jqgrid-btable .ui-sgcollapsed span {display: block;}
+.ui-jqgrid .ui-subgrid {margin:0em;padding:0em; width:100%;}
+.ui-jqgrid .ui-subgrid table {table-layout: fixed;}
+.ui-jqgrid .ui-subgrid tr.ui-subtblcell td {height:18px;border-right-width: 1px; border-right-color: inherit; border-right-style: solid;border-bottom-width: 1px; border-bottom-color: inherit; border-bottom-style: solid;}
+.ui-jqgrid .ui-subgrid td.subgrid-data {border-top:  0px none !important;}
+.ui-jqgrid .ui-subgrid td.subgrid-cell {border-width: 0px 0px 1px 0px;}
+.ui-jqgrid .ui-th-subgrid {height:20px;}
+/* loading */
+.ui-jqgrid .loading {position: absolute; top: 45%;left: 45%;width: auto;z-index:101;padding: 6px; margin: 5px;text-align: center;font-weight: bold;display: none;border-width: 2px !important; font-size:11px;}
+.ui-jqgrid .jqgrid-overlay {display:none;z-index:100;}
+* html .jqgrid-overlay {width: expression(this.parentNode.offsetWidth+'px');height: expression(this.parentNode.offsetHeight+'px');}
+* .jqgrid-overlay iframe {position:absolute;top:0;left:0;z-index:-1;width: expression(this.parentNode.offsetWidth+'px');height: expression(this.parentNode.offsetHeight+'px');}
+/* end loading div */
+/* toolbar */
+.ui-jqgrid .ui-userdata {border-left: 0px none;	border-right: 0px none;	height : 21px;overflow: hidden;	}
+/*Modal Window */
+.ui-jqdialog { display: none; width: 300px; position: absolute; padding: .2em; font-size:11px; overflow:visible;}
+.ui-jqdialog .ui-jqdialog-titlebar { padding: .3em .2em; position: relative;  }
+.ui-jqdialog .ui-jqdialog-title { margin: .1em 0 .2em; }
+.ui-jqdialog .ui-jqdialog-titlebar-close { position: absolute;  top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+
+.ui-jqdialog .ui-jqdialog-titlebar-close span { display: block; margin: 1px; }
+.ui-jqdialog .ui-jqdialog-titlebar-close:hover, .ui-jqdialog .ui-jqdialog-titlebar-close:focus { padding: 0; }
+.ui-jqdialog-content, .ui-jqdialog .ui-jqdialog-content { border: 0; padding: .3em .2em; background: none; height:auto;}
+.ui-jqdialog .ui-jqconfirm {padding: .4em 1em; border-width:3px;position:absolute;bottom:10px;right:10px;overflow:visible;display:none;height:80px;width:220px;text-align:center;}
+/* end Modal window*/
+/* Form edit */
+.ui-jqdialog-content .FormGrid {margin: 0px;}
+.ui-jqdialog-content .EditTable { width: 100%; margin-bottom:0em;}
+.ui-jqdialog-content .DelTable { width: 100%; margin-bottom:0em;}
+.EditTable td input, .EditTable td select, .EditTable td textarea {margin: 0em;}
+.EditTable td textarea { width:auto; height:auto;}
+.ui-jqdialog-content td.EditButton {text-align: right;border-top: 0px none;border-left: 0px none;border-right: 0px none; padding-bottom:5px; padding-top:5px;}
+.ui-jqdialog-content td.navButton {text-align: center; border-left: 0px none;border-top: 0px none;border-right: 0px none; padding-bottom:5px; padding-top:5px;}
+.ui-jqdialog-content input.FormElement {padding:.3em}
+.ui-jqdialog-content .data-line {padding-top:.1em;border: 0px none;}
+
+.ui-jqdialog-content .CaptionTD {vertical-align: middle;border: 0px none; padding: 2px;white-space: nowrap;}
+.ui-jqdialog-content .DataTD {padding: 2px; border: 0px none; vertical-align: top;}
+.ui-jqdialog-content .form-view-data {white-space:pre}
+.fm-button { display: inline-block; margin:0 4px 0 0; padding: .4em .5em; text-decoration:none !important; cursor:pointer; position: relative; text-align: center; zoom: 1; }
+.fm-button-icon-left { padding-left: 1.9em; }
+.fm-button-icon-right { padding-right: 1.9em; }
+.fm-button-icon-left .ui-icon { right: auto; left: .2em; margin-left: 0; position: absolute; top: 50%; margin-top: -8px; }
+.fm-button-icon-right .ui-icon { left: auto; right: .2em; margin-left: 0; position: absolute; top: 50%; margin-top: -8px;}
+#nData, #pData { float: left; margin:3px;padding: 0; width: 15px; }
+/* End Eorm edit */
+/*.ui-jqgrid .edit-cell {}*/
+.ui-jqgrid .selected-row, div.ui-jqgrid .selected-row td {font-style : normal;border-left: 0px none;}
+/* inline edit actions button*/
+.ui-inline-del.ui-state-hover span, .ui-inline-edit.ui-state-hover span,
+.ui-inline-save.ui-state-hover span, .ui-inline-cancel.ui-state-hover span {
+    margin: -1px;
+}
+/* Tree Grid */
+.ui-jqgrid .tree-wrap {float: left; position: relative;height: 18px;white-space: nowrap;overflow: hidden;}
+.ui-jqgrid .tree-minus {position: absolute; height: 18px; width: 18px; overflow: hidden;}
+.ui-jqgrid .tree-plus {position: absolute;	height: 18px; width: 18px;	overflow: hidden;}
+.ui-jqgrid .tree-leaf {position: absolute;	height: 18px; width: 18px;overflow: hidden;}
+.ui-jqgrid .treeclick {cursor: pointer;}
+/* moda dialog */
+* iframe.jqm {position:absolute;top:0;left:0;z-index:-1;width: expression(this.parentNode.offsetWidth+'px');height: expression(this.parentNode.offsetHeight+'px');}
+.ui-jqgrid-dnd tr td {border-right-width: 1px; border-right-color: inherit; border-right-style: solid; height:20px}
+/* RTL Support */
+.ui-jqgrid .ui-jqgrid-title-rtl {float:right;margin: .1em 0 .2em; }
+.ui-jqgrid .ui-jqgrid-hbox-rtl {float: right; padding-left: 20px;}
+.ui-jqgrid .ui-jqgrid-resize-ltr {float: right;margin: -2px -2px -2px 0px;}
+.ui-jqgrid .ui-jqgrid-resize-rtl {float: left;margin: -2px 0px -1px -3px;}
+.ui-jqgrid .ui-sort-rtl {left:0px;}
+.ui-jqgrid .tree-wrap-ltr {float: left;}
+.ui-jqgrid .tree-wrap-rtl {float: right;}
+.ui-jqgrid .ui-ellipsis {text-overflow:ellipsis;}
+.searchFilter input, .searchFilter select{width:auto}
+
+/*******************************************************************************
+ * Tree container
+ */
+ul.dynatree-container
+{
+    font-family: tahoma, arial, helvetica;
+    font-size: 10pt; /* font size should not be too big */
+    white-space: nowrap;
+    padding: 3px;
+    margin: 0; /* issue 201 */
+    background-color: white;
+    overflow: auto;
+    height: 100%; /* issue 263 */
+}
+
+ul.dynatree-container ul
+{
+    padding: 0 0 0 16px;
+    margin: 0;
+}
+
+ul.dynatree-container li
+{
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    -moz-background-clip:border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: repeat-y;
+    background-image: none;  /* no v-lines */
+    margin:5px 0 5px 5px;
+    padding:1px 0 0 0;
+}
+/* Suppress lines for last child node */
+ul.dynatree-container li.dynatree-lastsib
+{
+    background-image: none;
+}
+ul.dynatree-container li
+{
+    width: fit-content;
+}
+/* Suppress lines if level is fixed expanded (option minExpandLevel) */
+ul.dynatree-no-connector > li
+{
+    background-image: none;
+}
+
+/* Style, when control is disabled */
+.ui-dynatree-disabled ul.dynatree-container
+{
+    opacity: 0.5;
+/*  filter: alpha(opacity=50); /* Yields a css warning */
+    background-color: silver;
+}
+
+
+/*******************************************************************************
+ * Common icon definitions
+ */
+span.dynatree-empty,
+span.dynatree-vline,
+span.dynatree-connector,
+span.dynatree-expander,
+span.dynatree-icon,
+span.dynatree-checkbox,
+span.dynatree-radio,
+span.dynatree-drag-helper-img,
+#dynatree-drop-marker
+{
+    width: 16px;
+    height: 16px;
+/*  display: -moz-inline-box; /* @ FF 1+2 removed for issue 221*/
+/*  -moz-box-align: start; /* issue 221 */
+    display: inline-block; /* Required to make a span sizeable */
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url("../images/icons.gif");
+    background-position: 0 0;
+}
+
+/** Used by 'icon' node option: */
+ul.dynatree-container img
+{
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    vertical-align: top;
+    border-style: none;
+}
+
+
+/*******************************************************************************
+ * Lines and connectors
+ */
+
+/*
+span.dynatree-empty
+{
+}
+span.dynatree-vline
+{
+}
+*/
+span.dynatree-connector
+{
+    background-image: none;
+}
+/*
+.dynatree-lastsib span.dynatree-connector
+{
+}
+*/
+/*******************************************************************************
+ * Expander icon
+ * Note: IE6 doesn't correctly evaluate multiples class names,
+ *       so we create combined class names that can be used in the CSS.
+ *
+ * Prefix: dynatree-exp-
+ * 1st character: 'e': expanded, 'c': collapsed
+ * 2nd character (optional): 'd': lazy (Delayed)
+ * 3rd character (optional): 'l': Last sibling
+ */
+
+span.dynatree-expander
+{
+    background-position: 0px -80px;
+    cursor: pointer;
+}
+span.dynatree-expander:hover
+{
+    background-position: -16px -80px;
+}
+.dynatree-exp-cl span.dynatree-expander /* Collapsed, not delayed, last sibling */
+{
+}
+.dynatree-exp-cd span.dynatree-expander /* Collapsed, delayed, not last sibling */
+{
+}
+.dynatree-exp-cdl span.dynatree-expander /* Collapsed, delayed, last sibling */
+{
+}
+.dynatree-exp-e span.dynatree-expander,  /* Expanded, not delayed, not last sibling */
+.dynatree-exp-ed span.dynatree-expander,  /* Expanded, delayed, not last sibling */
+.dynatree-exp-el span.dynatree-expander,  /* Expanded, not delayed, last sibling */
+.dynatree-exp-edl span.dynatree-expander  /* Expanded, delayed, last sibling */
+{
+    background-position: -32px -80px;
+}
+.dynatree-exp-e span.dynatree-expander:hover,  /* Expanded, not delayed, not last sibling */
+.dynatree-exp-ed span.dynatree-expander:hover,  /* Expanded, delayed, not last sibling */
+.dynatree-exp-el span.dynatree-expander:hover,  /* Expanded, not delayed, last sibling */
+.dynatree-exp-edl span.dynatree-expander:hover  /* Expanded, delayed, last sibling */
+{
+    background-position: -48px -80px;
+}
+.dynatree-loading span.dynatree-expander  /* 'Loading' status overrides all others */
+{
+    background-position: 0 0;
+    background-image: url("../images/loading.gif");
+}
+
+
+/*******************************************************************************
+ * Checkbox icon
+ */
+span.dynatree-checkbox
+{
+    margin-left: 3px;margin-top: 2px;background-position: 0px -32px;
+}
+span.dynatree-checkbox:hover
+{
+    background-position: -16px -32px;
+}
+
+.dynatree-partsel span.dynatree-checkbox
+{
+    background-position: -64px -32px;
+}
+.dynatree-partsel span.dynatree-checkbox:hover
+{
+    background-position: -80px -32px;
+}
+
+.dynatree-selected span.dynatree-checkbox
+{
+    background-position: -32px -32px;
+}
+.dynatree-selected span.dynatree-checkbox:hover
+{
+    background-position: -48px -32px;
+}
+
+/*******************************************************************************
+ * Radiobutton icon
+ * This is a customization, that may be activated by overriding the 'checkbox'
+ * class name as 'dynatree-radio' in the tree options.
+ */
+span.dynatree-radio
+{
+    margin-left: 3px;
+    background-position: 0px -48px;
+}
+span.dynatree-radio:hover
+{
+    background-position: -16px -48px;
+}
+
+.dynatree-partsel span.dynatree-radio
+{
+    background-position: -64px -48px;
+}
+.dynatree-partsel span.dynatree-radio:hover
+{
+    background-position: -80px -48px;
+}
+
+.dynatree-selected span.dynatree-radio
+{
+    background-position: -32px -48px;
+}
+.dynatree-selected span.dynatree-radio:hover
+{
+    background-position: -48px -48px;
+}
+
+/*******************************************************************************
+ * Node type icon
+ * Note: IE6 doesn't correctly evaluate multiples class names,
+ *       so we create combined class names that can be used in the CSS.
+ *
+ * Prefix: dynatree-ico-
+ * 1st character: 'e': expanded, 'c': collapsed
+ * 2nd character (optional): 'f': folder
+ */
+
+span.dynatree-icon /* Default icon */
+{
+    margin-left: 3px;
+    background-position: 0px 0px;
+}
+
+.dynatree-has-children span.dynatree-icon /* Default icon */
+{
+/*    background-position: 0px -16px; */
+}
+
+.dynatree-ico-cf span.dynatree-icon  /* Collapsed Folder */
+{
+    background-position: 0px -16px;
+}
+
+.dynatree-ico-ef span.dynatree-icon  /* Expanded Folder */
+{
+    background-position: -64px -16px;
+}
+
+/* Status node icons */
+
+.dynatree-statusnode-wait span.dynatree-icon
+{
+    background-image: url("../images/loading.gif");
+}
+
+.dynatree-statusnode-error span.dynatree-icon
+{
+    background-position: 0px -112px;
+/*  background-image: url("ltError.gif");*/
+}
+
+/*******************************************************************************
+ * Node titles
+ */
+
+/* @Chrome: otherwise hit area of node titles is broken (issue 133)
+   Removed again for issue 165; (133 couldn't be reproduced) */
+span.dynatree-node
+{
+/*  display: -moz-inline-box; /* issue 133, 165, 172, 192. removed for issue 221 */
+/*  -moz-box-align: start; /* issue 221 */
+/*  display: inline-block; /* Required to make a span sizeable */
+}
+
+
+/* Remove blue color and underline from title links */
+ul.dynatree-container a
+/*, ul.dynatree-container a:visited*/
+{
+    color: black; /* inherit doesn't work on IE */
+    text-decoration: none;
+    vertical-align: top;
+    margin: 0px;
+    margin-left: 3px;
+/*  outline: 0; /* @ Firefox, prevent dotted border after click */
+    /* Set transparent border to prevent jumping when active node gets a border
+       (we can do this, because this theme doesn't use vertical lines)
+       */
+    border: 1px solid white; /* Note: 'transparent' would not work in IE6 */
+
+}
+
+ul.dynatree-container a:hover
+{
+/*  text-decoration: underline; */
+    background: #F2F7FD; /* light blue */
+    border-color: #B8D6FB; /* darker light blue */
+}
+
+span.dynatree-node a
+{
+ /*  display: inline-block; /* Better alignment, when title contains <br> */ 
+/*  vertical-align: top;*/
+    padding-left: 3px;
+    padding-right: 3px; /* Otherwise italic font will be outside bounds */
+    /*  line-height: 16px; /* should be the same as img height, in case 16 px */
+}
+span.dynatree-folder a
+{
+/*  font-weight: bold; */ /* custom */
+}
+
+ul.dynatree-container a:focus,
+span.dynatree-focused a:link  /* @IE */
+{
+    background-color: #EFEBDE; /* gray */
+}
+
+span.dynatree-has-children a
+{
+/*  font-style: oblique; /* custom: */
+}
+
+span.dynatree-expanded a
+{
+}
+
+span.dynatree-selected a
+{
+/*  color: green; */
+    font-style: italic;
+}
+
+span.dynatree-active a
+{
+    border: 1px solid #99DEFD;
+    background-color: #D8F0FA;
+}
+
+/*******************************************************************************
+ * Drag'n'drop support
+ */
+
+/*** CallableResolver object ************************************************************/
+div.dynatree-drag-helper
+{
+}
+div.dynatree-drag-helper a
+{
+    border: 1px solid gray;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    opacity: 0.8;
+}
+span.dynatree-drag-helper-img
+{
+    /*
+    position: relative;
+    left: -16px;
+    */
+}
+div.dynatree-drag-helper /*.dynatree-drop-accept*/
+{
+/*    border-color: green;
+    background-color: red;*/
+}
+div.dynatree-drop-accept span.dynatree-drag-helper-img
+{
+    background-position: -32px -112px;
+}
+div.dynatree-drag-helper.dynatree-drop-reject
+{
+    border-color: red;
+}
+div.dynatree-drop-reject span.dynatree-drag-helper-img
+{
+    background-position: -16px -112px;
+}
+
+/*** Drop marker icon *********************************************************/
+
+#dynatree-drop-marker
+{
+    width: 24px;
+    position: absolute;
+    background-position: 0 -128px;
+    margin: 0;
+}
+#dynatree-drop-marker.dynatree-drop-after,
+#dynatree-drop-marker.dynatree-drop-before
+{
+    width:64px;
+    background-position: 0 -144px;
+}
+#dynatree-drop-marker.dynatree-drop-copy
+{
+    background-position: -64px -128px;
+}
+#dynatree-drop-marker.dynatree-drop-move
+{
+    background-position: -64px -128px;
+}
+
+/*** Source node while dragging ***********************************************/
+
+span.dynatree-drag-source
+{
+    /* border: 1px dotted gray; */
+    background-color: #e0e0e0;
+}
+span.dynatree-drag-source a
+{
+    color: gray;
+}
+
+/*** Target node while dragging cursor is over it *****************************/
+
+span.dynatree-drop-target
+{
+    /*border: 1px solid gray;*/
+}
+span.dynatree-drop-target a
+{
+}
+span.dynatree-drop-target.dynatree-drop-accept a
+{
+    /*border: 1px solid green;*/
+    background-color: #3169C6 !important;
+    color: white !important; /* @ IE6 */
+    text-decoration: none;
+}
+span.dynatree-drop-target.dynatree-drop-reject
+{
+    /*border: 1px solid red;*/
+}
+span.dynatree-drop-target.dynatree-drop-after a
+{
+}
+
+
+/*******************************************************************************
+ *	DATE TIME PICKER
+ *	http://trentrichardson.com/examples/timepicker/
+ ******************************************************************************/
+
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; }
+.ui-timepicker-rtl dl dd { margin: 0 65px 10px 10px; }
+
+#colorPick * {
+	z-index: 6;
+	-webkit-transition: all linear .2s;
+	-moz-transition: all linear .2s;
+	-ms-transition: all linear .2s;
+	-o-transition: all linear .2s;
+	transition: all linear .2s;
+}
+
+.colorPickSelector {
+	border-radius: 5px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	-webkit-transition: all linear .2s;
+	-moz-transition: all linear .2s;
+	-ms-transition: all linear .2s;
+	-o-transition: all linear .2s;
+	transition: all linear .2s;
+}
+.colorPickSelector:hover { transform: scale(1.1); }
+
+#colorPick {
+	background: rgba(255, 255, 255, 0.85);
+	-webkit-backdrop-filter: blur(15px);
+	position: absolute;
+	border-radius: 5px;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+	padding: 15px;
+	font-family: "Open Sans", sans-serif;
+	width: 140px;
+	z-index: 6;
+}
+
+#colorPick span {
+	font-size: 9pt;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #bbb;
+	margin-bottom: 5px;
+	display: block;
+	clear: both;
+}
+
+.colorPickButton {
+	border-radius: 5px;
+	width: 20px;
+	height: 20px;
+	margin: 1px 4px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.colorPickButton:hover {
+	transform: scale(1.1);
+}
+
+.colorPickDummy {
+	background: #fff;
+	border: 1px dashed #bbb;
+}
+
+/*******************************************************************************
+ 
+ ******************************************************************************/
+.snackbar-container{transition:all .5s ease;transition-property:top,right,bottom,left,opacity;font-family:Roboto,sans-serif;font-size:14px;min-height:14px;background-color:#070b0e;position:fixed;display:flex;justify-content:space-between;align-items:center;color:#fff;line-height:22px;padding:18px 24px;bottom:-100px;top:-100px;opacity:0;z-index:9999}.snackbar-container .action{background:inherit;display:inline-block;border:none;font-size:inherit;text-transform:uppercase;color:#4caf50;margin:0 0 0 24px;padding:0;min-width:min-content;cursor:pointer}@media (min-width:640px){.snackbar-container{min-width:288px;max-width:568px;display:inline-flex;border-radius:2px;margin:24px}}@media (max-width:640px){.snackbar-container{left:0;right:0;width:100%}}.snackbar-pos.bottom-center{top:auto!important;bottom:0;left:50%;transform:translate(-50%,0)}.snackbar-pos.bottom-left{top:auto!important;bottom:0;left:0}.snackbar-pos.bottom-right{top:auto!important;bottom:0;right:0}.snackbar-pos.top-left{bottom:auto!important;top:0;left:0}.snackbar-pos.top-center{bottom:auto!important;top:0;left:50%;transform:translate(-50%,0)}.snackbar-pos.top-right{bottom:auto!important;top:0;right:0}@media (max-width:640px){.snackbar-pos.bottom-center,.snackbar-pos.top-center{left:0;transform:none}}
